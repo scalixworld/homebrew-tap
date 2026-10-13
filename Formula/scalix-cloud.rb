@@ -7,7 +7,7 @@
 class ScalixCloud < Formula
   desc "CLI for Scalix Cloud — database, functions, AI, storage, one API key"
   homepage "https://scalix.world"
-  version "1.3.5"
+  version "1.5.0"
   license "BUSL-1.1"
 
   BASE = "https://github.com/scalixworld/scalix-cloud-cli/releases/download/v#{version}"
@@ -15,22 +15,22 @@ class ScalixCloud < Formula
   on_macos do
     on_arm do
       url "#{BASE}/scalix-cloud-aarch64-apple-darwin"
-      sha256 "a3124686aeb1ccff878bdca54ede0fc140d51e8b7741627883ccc1cf54377065"
+      sha256 "1c582c8160a12faf3c5decacea196ada821dd725b89026da4d6c6861c85ae116"
     end
     on_intel do
       url "#{BASE}/scalix-cloud-x86_64-apple-darwin"
-      sha256 "f1d13dc9b6156dc24665385a587fed8caa8247cb42c5e92608f90cfeecf75d53"
+      sha256 "3b68ecbe66eef7799da79d9c7a4cc86da0de5116f9be3cd10df419c3611d1f12"
     end
   end
 
   on_linux do
     on_arm do
       url "#{BASE}/scalix-cloud-aarch64-unknown-linux-gnu"
-      sha256 "f7d964f3ee372ca588117879a175e2acab82dbbd670e0f764c55637854b2d9ce"
+      sha256 "871df18b7e31ea1f2500573524940a6ef9ff631c0374b96e3a325dab424edf8f"
     end
     on_intel do
       url "#{BASE}/scalix-cloud-x86_64-unknown-linux-gnu"
-      sha256 "a2d06cd681686c4e78d20d90ea32cbdfc0495a4c2e8df9d04cec740688d39085"
+      sha256 "f53cda81ebe89effea2f34f2c6f9c7af005d8d98590ea637bb14b2b9f7569ed4"
     end
   end
 
